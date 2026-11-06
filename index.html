@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KEYED — Verified player passports and escrowed tournaments for GTA</title>
+<meta name="description" content="A player passport verified from your Rockstar account, and tournaments where the prize sits in escrow on Solana. GTA Online today, GTA VI on day one. No token, no NFT.">
+<meta name="theme-color" content="#140d16">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dwisok.github.io/keyed-web/">
+<meta property="og:title" content="KEYED — Your GTA record, cut into a key">
+<meta property="og:description" content="A player passport verified from your Rockstar account. Tournaments with the prize in escrow on Solana. GTA VI, day one. No token, no NFT.">
+<meta property="og:image" content="https://dwisok.github.io/keyed-web/assets/passport-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://dwisok.github.io/keyed-web/assets/passport-share.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..100,400..900&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap top__in">
+    <a class="top__mark" href="#hero">KEYED</a>
+    <nav class="top__nav" aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#passport">Passport</a>
+      <a href="#tournaments">Tournaments</a>
+      <a href="#questions">Questions</a>
+    </nav>
+    <div class="top__cta">
+      <a class="btn btn--ghost btn--sm" id="appLink" href="http://localhost:5173/" rel="noopener">Open the console</a>
+      <a class="btn btn--primary btn--sm top__join" href="#join">Join the list <span class="btn__arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ====================== HERO: the key hangs above, the words sit below ====================== -->
+  <section class="hero" id="hero">
+    <canvas id="key" class="hero__key" aria-hidden="true"></canvas>
+    <div class="hero__veil" aria-hidden="true"></div>
+
+    <div class="wrap hero__in">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Player passport · Solana · GTA Online → GTA VI</p>
+      <h1>Your GTA record,<br>cut into a key.</h1>
+      <p class="lead">A player passport verified from your Rockstar account. It opens tournaments where the prize sits in escrow on Solana, out of anyone's hands. GTA Online today, GTA VI on day one.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#join">Join the list <span class="btn__arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="#how">See how it works <span class="btn__arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <ul class="wrap ticks" aria-label="Key facts">
+      <li><b>Solana</b><span>chain</span></li>
+      <li><b>USDC</b><span>entries &amp; prizes</span></li>
+      <li><b>zkTLS</b><span>proof</span></li>
+      <li><b>48 h</b><span>dispute window</span></li>
+    </ul>
+  </section>
+
+  <!-- ====================== HOW IT WORKS ====================== -->
+  <section class="wrap section" id="how">
+    <header class="section__head">
+      <p class="eyebrow">How it works</p>
+      <h2>From proof<br>to payout.</h2>
+      <p class="section__sub">Nothing runs in the game. The proof happens in your browser, the record lives on Solana, and the prize never passes through a person.</p>
+    </header>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step__n">01 · Proof</span>
+        <div class="screen">
+          <p class="screen__path">socialclub.rockstargames.com</p>
+          <dl class="screen__rows">
+            <div><dt>account</dt><dd>linked</dd></div>
+            <div><dt>game</dt><dd>GTA V</dd></div>
+            <div><dt>playtime</dt><dd>142 h</dd></div>
+            <div><dt>progress</dt><dd>61 %</dd></div>
+            <div><dt>crew</dt><dd>Causeway Kings</dd></div>
+          </dl>
+          <p class="screen__foot"><span class="ok">✓</span> proof sealed · nothing sent to Rockstar</p>
+        </div>
+        <h3>Every proof cuts a tooth</h3>
+        <p>A zkTLS proof reads your Social Club profile inside your browser. Rockstar sees nothing. Neither do we. Each verified field becomes one cut in the key.</p>
+      </li>
+
+      <li class="step reveal">
+        <span class="step__n">02 · Passport</span>
+        <div class="screen">
+          <p class="screen__path">solana · passport · KX-0427-91A</p>
+          <dl class="screen__rows">
+            <div><dt>owner</dt><dd>CausewayKid</dd></div>
+            <div><dt>verified for</dt><dd>GTA V</dd></div>
+            <div><dt>name</dt><dd>sha256 · 8f3a…c1</dd></div>
+            <div><dt>transfer</dt><dd>disabled</dd></div>
+            <div><dt>refresh</dt><dd>→ GTA VI</dd></div>
+          </dl>
+          <p class="screen__foot"><span class="ok">✓</span> co-signed by the verifier</p>
+        </div>
+        <h3>The key is your passport</h3>
+        <p>One record on Solana that nobody can forge. It can't be bought, sold or lent. On November 19, refresh it and it moves to GTA VI.</p>
+      </li>
+
+      <li class="step reveal">
+        <span class="step__n">03 · Lock</span>
+        <div class="screen">
+          <p class="screen__path">tournament · Causeway Sprint</p>
+          <dl class="screen__rows">
+            <div><dt>game</dt><dd>GTA V or VI</dd></div>
+            <div><dt>playtime</dt><dd>≥ 10 h</dd></div>
+            <div><dt>crew</dt><dd>any</dd></div>
+            <div><dt>CausewayKid</dt><dd class="ok">accepted</dd></div>
+            <div><dt>alt_0x91</dt><dd class="no">refused on chain</dd></div>
+          </dl>
+          <p class="screen__foot">pins checked by the program, not by a person</p>
+        </div>
+        <h3>A tournament is a lock</h3>
+        <p>The organizer sets the pins: game, hours, crew. A passport that doesn't match is refused on chain. Alt accounts stay out.</p>
+      </li>
+
+      <li class="step reveal">
+        <span class="step__n">04 · Payout</span>
+        <div class="screen">
+          <p class="screen__path">escrow · 165 USDC</p>
+          <ol class="screen__steps">
+            <li class="is-done">locked in escrow</li>
+            <li class="is-done">standings signed by two judges</li>
+            <li class="is-done">48 hours to dispute</li>
+            <li class="is-on">paid · GladesRunner 99 · CausewayKid 66</li>
+          </ol>
+          <p class="screen__foot"><span class="ok">✓</span> program pays winners directly</p>
+        </div>
+        <h3>Nobody holds the prize</h3>
+        <p>It sits in an escrow owned by the tournament. Judges sign, entrants get 48 hours to dispute, then the program pays the winners directly.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ====================== PASSPORT ====================== -->
+  <section class="section" id="passport">
+    <header class="wrap section__head">
+      <p class="eyebrow">The passport</p>
+      <h2>One record.<br>Nobody can forge it.</h2>
+      <p class="section__sub">The passport is the key. The cuts in its edge are your verified fields, and the lock of every tournament reads them on chain.</p>
+    </header>
+
+    <div class="plate reveal" id="plate">
+      <div class="plate__glow" aria-hidden="true"></div>
+      <div class="stage3d" id="stage3d">
+          <div class="cardwrap" id="cardwrap">
+            <span class="card__shadow" id="shadow" aria-hidden="true"></span>
+            <article class="card" id="card" aria-label="Example player passport. Click to flip." tabindex="0">
+
+              <!-- ============ FRONT ============ -->
+              <div class="face face--front" id="front">
+                <!-- the photograph: a Vice City print, with the key cut through it -->
+                <div class="photo" aria-hidden="true">
+                  <img src="assets/print/hotel.jpg" alt="" width="1045" height="1400">
+                  <span class="photo__grain"></span>
+                  <span class="photo__shade"></span>
+                  <span class="photo__brand" data-text="KEYED">KEYED</span>
+                  <span class="photo__foot"><b>GTA V</b><i>Issued 03.11.2026</i></span>
+                </div>
+
+                <!-- the paper: cut along the key's record -->
+                <div class="paperwrap" aria-hidden="true"><div class="paper" id="paperFront">
+                  <span class="layer layer--paper"></span>
+                  <span class="layer layer--micro"></span>
+                  <span class="layer layer--guilloche"></span>
+                </div></div>
+                <svg class="edge" id="edgeFront" aria-hidden="true" preserveAspectRatio="none"><path/></svg>
+
+                <div class="print">
+                  <header class="print__head">
+                    <span class="print__no">Nº KX-0427-91A</span>
+                    <span class="print__doc"><i></i>Player passport</span>
+                  </header>
+                  <div class="print__who">
+                    <p class="print__label">Holder</p>
+                    <p class="print__name">CausewayKid</p>
+                    <p class="print__meta">Social Club member since 2013</p>
+                    <p class="print__ok"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6.2 12 13.5 4"/></svg>Verified on Solana</p>
+                  </div>
+                  <dl class="print__fields">
+                    <div><dt>Playtime</dt><dd>142 h</dd></div>
+                    <div><dt>Progress</dt><dd>61 %</dd></div>
+                    <div><dt>Crew</dt><dd>Causeway Kings</dd></div>
+                    <div><dt>Record</dt><dd>12 · 3 won</dd></div>
+                  </dl>
+                  <p class="print__mrz" aria-hidden="true"><span>P&lt;KEYED&lt;CAUSEWAYKID&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span><span>KX042791A4SOL&lt;&lt;GTAV&lt;2013&lt;142H&lt;61&lt;&lt;CAUSEWAY&lt;KINGS&lt;&lt;&lt;&lt;&lt;&lt;&lt;8</span></p>
+                </div>
+
+                <span class="seal" aria-hidden="true">
+                  <svg viewBox="0 0 100 100">
+                    <defs><path id="sealring" d="M50 50 m-37 0 a37 37 0 1 1 74 0 a37 37 0 1 1 -74 0"/></defs>
+                    <circle cx="50" cy="50" r="48" class="seal__disc"/>
+                    <circle cx="50" cy="50" r="43.5" class="seal__ring"/>
+                    <circle cx="50" cy="50" r="28" class="seal__core"/>
+                    <text class="seal__text"><textPath href="#sealring" startOffset="0" textLength="232">VERIFIED ON SOLANA · VERIFIED ON SOLANA ·</textPath></text>
+                    <path class="seal__check" d="M37 51.5 46.5 61 64 41"/>
+                  </svg>
+                </span>
+
+                <span class="layer layer--vignette" aria-hidden="true"></span>
+                <span class="layer layer--holo" aria-hidden="true"></span>
+                <span class="layer layer--gloss" aria-hidden="true"></span>
+                <span class="layer layer--sweep" aria-hidden="true"></span>
+              </div>
+
+              <!-- ============ BACK ============ -->
+              <div class="face face--back" id="back">
+                <div class="photo photo--back" aria-hidden="true">
+                  <img src="assets/print/hotel.jpg" alt="" width="1045" height="1400">
+                  <span class="photo__grain"></span>
+                  <span class="photo__shade"></span>
+                </div>
+                <div class="paperwrap paperwrap--back" aria-hidden="true"><div class="paper paper--back" id="paperBack">
+                  <span class="layer layer--microback"></span>
+                </div></div>
+                <svg class="edge edge--back" id="edgeBack" aria-hidden="true" preserveAspectRatio="none"><path/></svg>
+
+                <div class="print print--back">
+                  <header class="print__head">
+                    <span class="back__brand">KEYED</span>
+                    <span class="print__no">Nº KX-0427-91A</span>
+                  </header>
+                  <div class="back__record" aria-label="Record hash">
+                    <p class="print__label">Record · sha256</p>
+                    <pre class="back__hex" id="backHex"></pre>
+                  </div>
+                  <dl class="back__meta">
+                    <div><dt>Network</dt><dd>Solana</dd></div>
+                    <div><dt>Program</dt><dd>9rnK…zwTX</dd></div>
+                    <div><dt>Proof</dt><dd>zkTLS · Social Club</dd></div>
+                    <div><dt>Transfer</dt><dd>Disabled</dd></div>
+                  </dl>
+                  <p class="back__line">No token · No NFT · Nothing in the game</p>
+                </div>
+                <span class="layer layer--vignette" aria-hidden="true"></span>
+                <span class="layer layer--holo layer--holo-back" aria-hidden="true"></span>
+                <span class="layer layer--gloss" aria-hidden="true"></span>
+              </div>
+
+            </article>
+          </div>
+      </div>
+
+      <div class="plate__bar">
+        <div class="plate__actions">
+          <button class="btn btn--ghost btn--sm" type="button" id="flipBtn">Flip card <span class="btn__arrow" aria-hidden="true">↻</span></button>
+          <button class="btn btn--ghost btn--sm" type="button" id="dlBtn">Download PNG <span class="btn__arrow" aria-hidden="true">↓</span></button>
+          <a class="btn btn--primary btn--sm" id="shareBtn" href="https://twitter.com/intent/tweet?text=My%20GTA%20record%2C%20cut%20into%20a%20key.%20KEYED%20player%20passport%2C%20verified%20on%20Solana.%20GTA%20VI%20day%20one.&amp;url=https%3A%2F%2Fdwisok.github.io%2Fkeyed-web%2F" target="_blank" rel="noopener">Share on X <span class="btn__arrow" aria-hidden="true">→</span></a>
+        </div>
+        <p class="plate__note">Example passport. Names and figures are illustrative.</p>
+      </div>
+    </div>
+
+    <ul class="wrap checks reveal">
+      <li>Verified from your Rockstar account, in your browser</li>
+      <li>Stored on Solana, co-signed by the verifier</li>
+      <li>Can't be bought, sold or lent</li>
+      <li>Refresh on November 19, it moves to GTA VI</li>
+    </ul>
+    <p class="center reveal"><a class="btn btn--ghost" href="#join">Get yours on day one <span class="btn__arrow" aria-hidden="true">→</span></a></p>
+  </section>
+
+  <!-- ====================== TOURNAMENTS ====================== -->
+  <section class="section" id="tournaments">
+    <header class="wrap section__head">
+      <p class="eyebrow">Tournaments</p>
+      <h2>The prize sits<br>in escrow.</h2>
+      <p class="section__sub">Organizers fund the pool, judges sign the standings, entrants get a window to dispute. Then the program pays. No treasurer, no promises.</p>
+    </header>
+
+    <div class="band reveal" id="vault" aria-label="Example tournament">
+      <div class="band__photo" aria-hidden="true"><img src="assets/print/race.jpg" alt="" width="1045" height="1400" loading="lazy"></div>
+      <div class="band__in">
+        <p class="eyebrow">Escrow · example</p>
+        <p class="vault__sum"><b id="sum">165</b> USDC</p>
+        <p class="vault__name">Causeway Sprint · GTA V or VI · 10 h minimum · Any crew</p>
+        <ol class="vault__steps">
+          <li class="is-done"><span>01</span>Locked in escrow</li>
+          <li class="is-done"><span>02</span>Standings signed by two judges</li>
+          <li class="is-done"><span>03</span>48 hours to dispute</li>
+          <li class="is-on"><span>04</span>Paid: GladesRunner 99, CausewayKid 66</li>
+        </ol>
+      </div>
+    </div>
+
+    <ul class="wrap points">
+      <li class="reveal"><b>Pins, not moderators.</b>Game, minimum hours and crew are enforced by the program when a player enters.</li>
+      <li class="reveal"><b>Judges, with a threshold.</b>Standings need a set number of approvals before anything moves.</li>
+      <li class="reveal"><b>A window to dispute.</b>Every entrant has 48 hours. After that, anyone can trigger the payout.</li>
+      <li class="reveal"><b>Cancel and reclaim.</b>If a tournament never runs, the organizer gets the pool back. Entrants get refunds.</li>
+    </ul>
+  </section>
+
+  <!-- ====================== QUESTIONS ====================== -->
+  <section class="wrap section" id="questions">
+    <header class="section__head">
+      <p class="eyebrow">Questions</p>
+      <h2>Nothing<br>in the game.</h2>
+      <p class="section__sub">Short answers. KEYED never touches GTA, its servers or your login.</p>
+    </header>
+
+    <div class="faq reveal">
+      <details class="faq__item" open>
+        <summary>Can I get banned?<span class="faq__plus" aria-hidden="true">+</span></summary>
+        <p>No. KEYED never touches the game, its servers or your login. Nothing runs on your console or PC. The proof reads a page you are already allowed to see, in your own browser.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Do I need crypto?<span class="faq__plus" aria-hidden="true">+</span></summary>
+        <p>No token, no NFT. You need a Solana wallet to sign, and USDC for entries and prizes. Phantom and Solflare both work.</p>
+      </details>
+      <details class="faq__item">
+        <summary>What does KEYED see?<span class="faq__plus" aria-hidden="true">+</span></summary>
+        <p>Only what a tournament needs: the game, your playtime, your progress and your crew. Your Social Club name is stored as a hash, never in clear.</p>
+      </details>
+      <details class="faq__item">
+        <summary>What happens on November 19?<span class="faq__plus" aria-hidden="true">+</span></summary>
+        <p>GTA VI launches. Refresh your passport and it records that its stats were verified against GTA VI. Tournaments can require either game, or both.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Who can trigger a payout?<span class="faq__plus" aria-hidden="true">+</span></summary>
+        <p>Anyone, once the judges' approvals are in and the dispute window has closed. The program checks both and pays the winners directly from escrow.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ====================== JOIN ====================== -->
+  <section class="section join-section" id="join">
+    <div class="join-box reveal">
+      <div class="wrap join-box__in">
+        <p class="eyebrow">Launch</p>
+        <p class="date" aria-label="November 19, 2026">11.19.2026</p>
+        <h2 class="join-box__title">The day GTA VI lands, <span id="days">your key</span> is ready.</h2>
+        <form class="join" id="form" novalidate>
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com" required>
+          <button class="btn btn--primary" type="submit">Join the list <span class="btn__arrow" aria-hidden="true">→</span></button>
+        </form>
+        <p class="join__msg" id="msg" role="status"></p>
+        <p class="join__hint">One email on launch day. No newsletter.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="top__mark">KEYED</span>
+    <p class="foot__tag">Verified player passports, crews and tournament escrow around GTA Online today and GTA VI on day one. Built on Solana.</p>
+    <nav class="foot__nav" aria-label="Footer">
+      <a href="#how">How it works</a>
+      <a href="#passport">Passport</a>
+      <a href="#tournaments">Tournaments</a>
+      <a href="#questions">Questions</a>
+      <a href="#join">Join the list</a>
+      <a href="http://localhost:5173/" data-app-link rel="noopener">Open the console</a>
+      <a id="xLink" href="https://x.com/" rel="noopener" target="_blank" hidden>Follow on X</a>
+    </nav>
+    <div class="foot__legal">
+      <p class="legal">Independent project. Not affiliated with Rockstar Games or Take-Two Interactive. Names and figures on this page are examples.</p>
+      <p class="legal">No token · No NFT · Nothing inside the game · © 2026 KEYED</p>
+    </div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="key.js"></script>
+<script src="card.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
